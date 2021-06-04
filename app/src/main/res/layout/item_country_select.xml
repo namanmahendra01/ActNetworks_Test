@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:contentDescription="@string/flag" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="6"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/radio"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/circle_filled"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:visibility="gone"
+        android:contentDescription="@string/flag" />
+    <ImageView
+        android:id="@+id/radio2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/circle_ring"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:contentDescription="@string/flag" />
+</LinearLayout>
